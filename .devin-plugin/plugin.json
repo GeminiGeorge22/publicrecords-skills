@@ -1,0 +1,76 @@
+{
+  "name": "publicrecords",
+  "displayName": "Public Records Data (Apify)",
+  "description": "Pull public data into your agent: US and EU government contracts and grants, job postings, Skool communities, Etsy sales, competitor ads, sports odds and Spotify plays",
+  "shortDescription": "Public-records and market data from 18 Apify Actors",
+  "setup": {
+    "notice": "Each tool call runs an Apify Actor on your own Apify account (sign in with Apify OAuth when prompted); Actors bill per result."
+  },
+  "homepage": "https://apify.com/publicrecords",
+  "repository": "https://github.com/GeminiGeorge22/publicrecords-skills",
+  "logo": "logo.png",
+  "keywords": [
+    "Data",
+    "Research",
+    "Government contracts",
+    "Jobs",
+    "Skool",
+    "Etsy"
+  ],
+  "mcpServers": {
+    "ashby-jobs-mcp": {
+      "url": "https://mcp.apify.com?tools=publicrecords/ashby-jobs-scraper"
+    },
+    "greenhouse-jobs-mcp": {
+      "url": "https://mcp.apify.com?tools=publicrecords/greenhouse-jobs-scraper"
+    },
+    "lever-jobs-mcp": {
+      "url": "https://mcp.apify.com?tools=publicrecords/lever-jobs-scraper"
+    },
+    "smartrecruiters-jobs-mcp": {
+      "url": "https://mcp.apify.com?tools=publicrecords/smartrecruiters-jobs-scraper"
+    },
+    "etsy-search-mcp": {
+      "url": "https://mcp.apify.com?tools=publicrecords/etsy-search-scraper"
+    },
+    "etsy-shop-sales-mcp": {
+      "url": "https://mcp.apify.com?tools=publicrecords/etsy-shop-velocity"
+    },
+    "calibration-ledger-mcp": {
+      "url": "https://mcp.apify.com?tools=publicrecords/calibration-ledger"
+    },
+    "govcon-opportunities-mcp": {
+      "url": "https://mcp.apify.com?tools=publicrecords/govcon-opportunity-feed"
+    },
+    "grants-gov-mcp": {
+      "url": "https://mcp.apify.com?tools=publicrecords/grants-gov-scraper"
+    },
+    "usaspending-awards-mcp": {
+      "url": "https://mcp.apify.com?tools=publicrecords/usaspending-awards-scraper"
+    },
+    "uk-tenders-mcp": {
+      "url": "https://mcp.apify.com?tools=publicrecords/uk-find-a-tender-scraper"
+    },
+    "eu-ted-tenders-mcp": {
+      "url": "https://mcp.apify.com?tools=publicrecords/eu-ted-notices-scraper"
+    },
+    "legistar-council-meetings-mcp": {
+      "url": "https://mcp.apify.com?tools=publicrecords/legistar-meetings-scraper"
+    },
+    "company-social-mcp": {
+      "url": "https://mcp.apify.com?tools=publicrecords/company-social-profile-finder"
+    },
+    "google-ads-transparency-mcp": {
+      "url": "https://mcp.apify.com?tools=publicrecords/google-ads-transparency-scraper"
+    },
+    "sports-odds-api": {
+      "url": "https://mcp.apify.com?tools=publicrecords/sports-odds-api"
+    },
+    "spotify-play-count-mcp": {
+      "url": "https://mcp.apify.com?tools=publicrecords/spotify-play-count-scraper"
+    },
+    "skool-community-mcp": {
+      "url": "https://mcp.apify.com?tools=publicrecords/skool-community-growth-tracker"
+    }
+  }
+}
