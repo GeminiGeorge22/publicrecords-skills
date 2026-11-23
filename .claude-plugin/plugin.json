@@ -1,0 +1,31 @@
+{
+  "name": "publicrecords",
+  "version": "1.0.0",
+  "description": "Agent Skills + Apify MCP for public-records data: US federal contracts and grants (SAM.gov, Grants.gov, USAspending), UK and EU tenders, city council meetings, ATS job postings, company social links, Etsy market research, competitor Google ads, sports odds, Spotify play counts and forecast track records.",
+  "author": {
+    "name": "GeminiGeorge22 (publicrecords on Apify)",
+    "url": "https://github.com/GeminiGeorge22"
+  },
+  "homepage": "https://apify.com/publicrecords",
+  "repository": "https://github.com/GeminiGeorge22/publicrecords-skills",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "agent-skills",
+    "apify",
+    "government-contracts",
+    "sam-gov",
+    "grants-gov",
+    "usaspending",
+    "tenders",
+    "job-postings",
+    "company-social",
+    "etsy",
+    "google-ads",
+    "sports-odds",
+    "spotify",
+    "forecasting"
+  ],
+  "icon": "./assets/icon.png",
+  "privacyPolicyUrl": "https://github.com/GeminiGeorge22/publicrecords-skills/blob/main/PRIVACY.md"
+}
