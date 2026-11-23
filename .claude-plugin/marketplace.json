@@ -5,15 +5,15 @@
     "url": "https://github.com/GeminiGeorge22"
   },
   "metadata": {
-    "description": "publicrecords Apify Actors as a Claude Code plugin: 8 Agent Skills plus the hosted Apify MCP server.",
-    "version": "1.0.0"
+    "description": "publicrecords Apify Actors as a Claude Code plugin: 9 Agent Skills plus the hosted Apify MCP server.",
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "publicrecords",
       "source": "./",
-      "description": "Agent Skills + Apify MCP for public-records data: US federal contracts and grants (SAM.gov, Grants.gov, USAspending), UK and EU tenders, city council meetings, ATS job postings, company social links, Etsy market research, competitor Google ads, sports odds, Spotify play counts and forecast track records.",
-      "version": "1.0.0",
+      "description": "Agent Skills + Apify MCP for public-records data: US federal contracts and grants (SAM.gov, Grants.gov, USAspending), UK and EU tenders, city council meetings, ATS job postings, company social links, Etsy market research, competitor Google ads, sports odds, Spotify play counts, forecast track records and Skool community search.",
+      "version": "1.1.0",
       "author": {
         "name": "GeminiGeorge22 (publicrecords on Apify)",
         "url": "https://github.com/GeminiGeorge22"
@@ -36,7 +36,8 @@
         "google-ads",
         "sports-odds",
         "spotify",
-        "forecasting"
+        "forecasting",
+        "skool"
       ],
       "category": "data"
     }
