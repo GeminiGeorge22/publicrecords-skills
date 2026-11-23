@@ -31,6 +31,7 @@ You need an Apify account. MCP clients sign you in with OAuth; or use your own A
 | Gemini CLI | `gemini extensions install https://github.com/GeminiGeorge22/publicrecords-skills` |
 | Kiro | Powers → Add Custom Power → Import power from GitHub → `https://github.com/GeminiGeorge22/publicrecords-skills` |
 | Any skills client (Claude, Codex, Cursor, OpenCode, Goose…) | `npx skills add GeminiGeorge22/publicrecords-skills` |
+| LM Studio, Windsurf, Cline, Zed, other MCP clients | paste the MCP JSON below into the client's MCP config |
 | Cursor (MCP only) | [Add to Cursor](https://cursor.com/en/install-mcp?name=publicrecords&config=eyJ1cmwiOiAiaHR0cHM6Ly9tY3AuYXBpZnkuY29tLz90b29scz1wdWJsaWNyZWNvcmRzL2NvbXBhbnktc29jaWFsLXByb2ZpbGUtZmluZGVyLHB1YmxpY3JlY29yZHMvZ292Y29uLW9wcG9ydHVuaXR5LWZlZWQscHVibGljcmVjb3Jkcy9ncmFudHMtZ292LXNjcmFwZXIscHVibGljcmVjb3Jkcy91c2FzcGVuZGluZy1hd2FyZHMtc2NyYXBlcixwdWJsaWNyZWNvcmRzL3VrLWZpbmQtYS10ZW5kZXItc2NyYXBlcixwdWJsaWNyZWNvcmRzL2V1LXRlZC1ub3RpY2VzLXNjcmFwZXIscHVibGljcmVjb3Jkcy9sZWdpc3Rhci1tZWV0aW5ncy1zY3JhcGVyLHB1YmxpY3JlY29yZHMvYXNoYnktam9icy1zY3JhcGVyLHB1YmxpY3JlY29yZHMvZ3JlZW5ob3VzZS1qb2JzLXNjcmFwZXIscHVibGljcmVjb3Jkcy9sZXZlci1qb2JzLXNjcmFwZXIscHVibGljcmVjb3Jkcy9zbWFydHJlY3J1aXRlcnMtam9icy1zY3JhcGVyLHB1YmxpY3JlY29yZHMvZXRzeS1zZWFyY2gtc2NyYXBlcixwdWJsaWNyZWNvcmRzL2V0c3ktc2hvcC12ZWxvY2l0eSxwdWJsaWNyZWNvcmRzL2dvb2dsZS1hZHMtdHJhbnNwYXJlbmN5LXNjcmFwZXIscHVibGljcmVjb3Jkcy9zcG9ydHMtb2Rkcy1hcGkscHVibGljcmVjb3Jkcy9zcG90aWZ5LXBsYXktY291bnQtc2NyYXBlcixwdWJsaWNyZWNvcmRzL2NhbGlicmF0aW9uLWxlZGdlciJ9) |
 | VS Code / Copilot Chat (MCP only) | [Install in VS Code](https://vscode.dev/redirect/mcp/install?name=publicrecords&config=%7B%22type%22%3A%20%22http%22%2C%20%22url%22%3A%20%22https%3A//mcp.apify.com/%3Ftools%3Dpublicrecords/company-social-profile-finder%2Cpublicrecords/govcon-opportunity-feed%2Cpublicrecords/grants-gov-scraper%2Cpublicrecords/usaspending-awards-scraper%2Cpublicrecords/uk-find-a-tender-scraper%2Cpublicrecords/eu-ted-notices-scraper%2Cpublicrecords/legistar-meetings-scraper%2Cpublicrecords/ashby-jobs-scraper%2Cpublicrecords/greenhouse-jobs-scraper%2Cpublicrecords/lever-jobs-scraper%2Cpublicrecords/smartrecruiters-jobs-scraper%2Cpublicrecords/etsy-search-scraper%2Cpublicrecords/etsy-shop-velocity%2Cpublicrecords/google-ads-transparency-scraper%2Cpublicrecords/sports-odds-api%2Cpublicrecords/spotify-play-count-scraper%2Cpublicrecords/calibration-ledger%22%7D) · [VS Code Insiders](https://insiders.vscode.dev/redirect/mcp/install?name=publicrecords&config=%7B%22type%22%3A%20%22http%22%2C%20%22url%22%3A%20%22https%3A//mcp.apify.com/%3Ftools%3Dpublicrecords/company-social-profile-finder%2Cpublicrecords/govcon-opportunity-feed%2Cpublicrecords/grants-gov-scraper%2Cpublicrecords/usaspending-awards-scraper%2Cpublicrecords/uk-find-a-tender-scraper%2Cpublicrecords/eu-ted-notices-scraper%2Cpublicrecords/legistar-meetings-scraper%2Cpublicrecords/ashby-jobs-scraper%2Cpublicrecords/greenhouse-jobs-scraper%2Cpublicrecords/lever-jobs-scraper%2Cpublicrecords/smartrecruiters-jobs-scraper%2Cpublicrecords/etsy-search-scraper%2Cpublicrecords/etsy-shop-velocity%2Cpublicrecords/google-ads-transparency-scraper%2Cpublicrecords/sports-odds-api%2Cpublicrecords/spotify-play-count-scraper%2Cpublicrecords/calibration-ledger%22%7D) |
 
@@ -45,6 +46,13 @@ You need an Apify account. MCP clients sign you in with OAuth; or use your own A
 ```
 
 Each Actor becomes a tool named `publicrecords--<actor-name>` ([Apify MCP docs](https://docs.apify.com/platform/integrations/mcp)). Want only one Actor? Each has its own entry in the [Official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.GeminiGeorge22) under `io.github.GeminiGeorge22/*`, also indexed in [publicrecords-mcp](https://github.com/GeminiGeorge22/publicrecords-mcp).
+
+## Checks
+
+- `claude plugin validate .`: passed (no findings).
+- `gemini extensions validate .`: passed.
+- `plugin.json` / `mcp.json`: valid against Agent Plugins 1.0.0 schemas.
+- HOL AI Plugin Scanner 3.61.0: 100/100.
 
 ## Layout
 
