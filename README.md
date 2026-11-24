@@ -64,7 +64,12 @@ mcp.json                         Agent Plugins MCP config (streamable-http)
 .claude-plugin/marketplace.json  Claude Code marketplace (this repo = 1 plugin)
 .mcp.json                        Claude Code MCP config
 .agents/plugins/marketplace.json Codex / ChatGPT repo marketplace
+.cursor-plugin/plugin.json       Cursor plugin manifest
+.cursor/rules/publicrecords-apify.mdc  Cursor project rule (own Apify account)
+.devin-plugin/plugin.json        Devin Desktop / formerly Windsurf
 gemini-extension.json + GEMINI.md Gemini CLI extension
+docs/OPENCODE.md                 OpenCode install
+docs/CLINE-ROO-KILO.md           Cline, Roo and Kilo install
 skills/<name>/SKILL.md           Agent Skills
 ```
 

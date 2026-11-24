@@ -1,0 +1,42 @@
+---
+description: Use Public Records Apify Actors for official public data (contracts, grants, tenders, jobs, company socials, Etsy, ads, odds, Spotify, forecast track records). The user must bring their own Apify account.
+globs:
+alwaysApply: false
+---
+
+# Public Records data (Apify)
+
+When the user asks for official public data — US federal contracts and grants, UK or EU tenders, city council meetings, ATS job postings, a company's official social links, Etsy listing or shop-sales figures, competitor Google ads, sportsbook odds, Spotify play counts, or an organization's forecast track record — use the Public Records skills and MCP in https://github.com/GeminiGeorge22/publicrecords-skills.
+
+## Auth
+
+- Actor runs are pay-per-event and bill **the user's own Apify account**.
+- Prefer OAuth against `https://mcp.apify.com`. Otherwise the user pastes **their** Apify API token as `Authorization: Bearer <token>`.
+- Never invent, commit, or reuse someone else's token. Never use a token from this repository; this repository has none.
+
+## Install
+
+Skills (Cursor, OpenCode, Claude, Codex, and other clients that support Agent Skills):
+
+```bash
+npx skills add GeminiGeorge22/publicrecords-skills
+```
+
+MCP (streamable HTTP). Ask the user to sign in with their Apify account:
+
+```json
+{
+  "mcpServers": {
+    "publicrecords": {
+      "type": "http",
+      "url": "https://mcp.apify.com/?tools=publicrecords/company-social-profile-finder,publicrecords/govcon-opportunity-feed,publicrecords/grants-gov-scraper,publicrecords/usaspending-awards-scraper,publicrecords/uk-find-a-tender-scraper,publicrecords/eu-ted-notices-scraper,publicrecords/legistar-meetings-scraper,publicrecords/ashby-jobs-scraper,publicrecords/greenhouse-jobs-scraper,publicrecords/lever-jobs-scraper,publicrecords/smartrecruiters-jobs-scraper,publicrecords/etsy-search-scraper,publicrecords/etsy-shop-velocity,publicrecords/google-ads-transparency-scraper,publicrecords/sports-odds-api,publicrecords/spotify-play-count-scraper,publicrecords/calibration-ledger"
+    }
+  }
+}
+```
+
+## Routing
+
+Follow the matching `skills/<name>/SKILL.md` in this repo. One question, one Actor. Do not give betting, investment, or legal advice. Do not write to any of the source sites.
+
+Author: Public Records (https://apify.com/publicrecords).

@@ -1,3 +1,8 @@
+## 1.2.0
+
+- Add a Cursor project rule (`.cursor/rules/publicrecords-apify.mdc`) and `.cursor-plugin/plugin.json`.
+- Document OpenCode, Cline, Roo and Kilo installs under `docs/`, including that Actor runs use the user's own Apify token.
+
 # Changelog
 
 ## 1.1.0 (2026-11-23)

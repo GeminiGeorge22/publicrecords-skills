@@ -1,0 +1,23 @@
+{
+  "name": "publicrecords",
+  "displayName": "Public Records",
+  "version": "1.2.0",
+  "description": "Agent Skills plus a hosted Apify MCP server for official public data: US federal contracts and grants, UK and EU tenders, city council meetings, ATS job postings, company social links, Etsy market research, competitor Google ads, sports odds, Spotify play counts and forecast track records. Authenticate with your own Apify account (OAuth or an API token). This plugin does not bundle tokens.",
+  "author": {
+    "name": "Public Records",
+    "url": "https://apify.com/publicrecords"
+  },
+  "homepage": "https://apify.com/publicrecords",
+  "repository": "https://github.com/GeminiGeorge22/publicrecords-skills",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "apify",
+    "publicrecords",
+    "government-contracts",
+    "grants",
+    "tenders",
+    "job-postings",
+    "cursor"
+  ]
+}
