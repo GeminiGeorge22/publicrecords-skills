@@ -1,6 +1,6 @@
 # publicrecords extension
 
-This extension connects the hosted Apify MCP server with the publicrecords Actors (tools named `publicrecords--<actor-name>`) and ships eight skills under `skills/`. Read the matching `skills/<name>/SKILL.md` before calling a tool:
+This extension connects the hosted Apify MCP server with the publicrecords Actors (tools named `publicrecords--<actor-name>`) and ships ten skills under `skills/`. The `tennis-scores` skill is API-only (this Actor has no hosted MCP / Standby endpoint); call it with the user's own `APIFY_TOKEN` as documented in the skill. Never ask the user to paste a token into chat. Read the matching `skills/<name>/SKILL.md` before calling a tool:
 
 - `gov-tenders-and-grants`: SAM.gov + Grants.gov feed, Grants.gov, USAspending awards, UK Find a Tender, EU TED, Legistar council meetings
 - `ats-job-postings`: New postings since any date from Ashby, Greenhouse, Lever, SmartRecruiters boards

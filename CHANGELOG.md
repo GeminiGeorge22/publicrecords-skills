@@ -1,3 +1,7 @@
+## 1.3.0
+
+- Add `tennis-scores` skill for `publicrecords/tennis-scores-api`. The skill calls the Actor through the Apify API with the user's own token. Standby/MCP mode is not built, so this Actor is not added to the fleet MCP `?tools=` list.
+
 ## 1.2.0
 
 - Add a Cursor project rule (`.cursor/rules/publicrecords-apify.mdc`) and `.cursor-plugin/plugin.json`.

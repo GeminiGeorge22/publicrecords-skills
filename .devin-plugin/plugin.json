@@ -1,8 +1,8 @@
 {
   "name": "publicrecords",
   "displayName": "Public Records Data (Apify)",
-  "description": "Pull public data into your agent: US and EU government contracts and grants, job postings, Skool communities, Etsy sales, competitor ads, sports odds and Spotify plays",
-  "shortDescription": "Public-records and market data from 18 Apify Actors",
+  "description": "Pull public data into your agent: US and EU government contracts and grants, job postings, Skool communities, Etsy sales, competitor ads, sports odds, tennis scores and Spotify plays",
+  "shortDescription": "Public-records and market data from 19 Apify Actors",
   "setup": {
     "notice": "Each tool call runs an Apify Actor on your own Apify account (sign in with Apify OAuth when prompted); Actors bill per result."
   },
@@ -15,7 +15,8 @@
     "Government contracts",
     "Jobs",
     "Skool",
-    "Etsy"
+    "Etsy",
+    "tennis"
   ],
   "mcpServers": {
     "ashby-jobs-mcp": {
