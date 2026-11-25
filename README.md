@@ -1,5 +1,11 @@
 # publicrecords skills: Agent Skills + MCP plugin for public-records data
 
+![A terminal demo: curl calls the Grants.gov Actor on your Apify account and prints three posted opportunities](./assets/demo.gif)
+
+**Try it, tell us, and star it if it helped.** Run any Public Records Actor or skill on your own Apify account, then [leave feedback](https://github.com/GeminiGeorge22/publicrecords-mcp/blob/main/BETA.md). A star is welcome if this repo saved you time. Stars are optional and are never rewarded.
+
+MCP servers and install pins live in [publicrecords-mcp](https://github.com/GeminiGeorge22/publicrecords-mcp).
+
 Ten [Agent Skills](https://agentskills.io) and one hosted MCP server that let your AI assistant pull **official public data** through the [publicrecords](https://apify.com/publicrecords) Actors on Apify: US federal contracts and grants, UK and EU tenders, city council meetings, new job postings from ATS boards, company social links, Etsy market data, competitor Google ads, sports odds, tennis scores, Spotify play counts, forecast track records and Skool community search. The tennis-scores skill calls `publicrecords/tennis-scores-api` through the Apify API with the user's own token (Standby/MCP is not built for that Actor; it is not on the MCP `?tools=` list).
 
 One repo, packaged for every major agent: **Claude Code / Claude, OpenAI Codex / ChatGPT, GitHub Copilot, Cursor, Gemini CLI, Kiro**, and any client that reads the [Agent Plugins](https://agent-plugins.org) format or plain `SKILL.md` folders.
@@ -79,6 +85,14 @@ skills/<name>/SKILL.md           Agent Skills
 - Write to any site (no posting, no listing changes, no messages). All Actors read public data.
 - Look up people. The company-social and forecast skills cover organizations only.
 - Give betting, investment or legal advice.
+
+## Beta testers
+
+We are looking for people who will run a skill or Actor on their own Apify account and tell us what broke or what they needed. Useful feedback can be credited here. Stars are optional and are never rewarded.
+
+See the [Public Records beta testers guide](https://github.com/GeminiGeorge22/publicrecords-mcp/blob/main/BETA.md).
+
+_No testers credited yet._
 
 ## License
 
