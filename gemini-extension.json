@@ -1,11 +1,11 @@
 {
   "name": "publicrecords",
-  "version": "1.3.0",
-  "description": "Agent Skills + Apify MCP for public-records data: US federal contracts and grants (SAM.gov, Grants.gov, USAspending), UK and EU tenders, city council meetings, ATS job postings, company social links, Etsy market research, competitor Google ads, sports odds, tennis scores, Spotify play counts, forecast track records and Skool community search.",
+  "version": "1.4.0",
+  "description": "Agent Skills + Apify MCP for public-records data: US federal contracts and grants (SAM.gov, Grants.gov, USAspending), UK and EU tenders, city council meetings, ATS job postings, company social links, Etsy market research, competitor Google ads, sports odds, tennis scores, Spotify play counts, forecast track records, Skool community search, PDF and web-page to Markdown, audio transcription, and email domain/MX/disposable checks (not the mailbox).",
   "mcpServers": {
     "publicrecords": {
       "type": "http",
-      "url": "https://mcp.apify.com/?tools=publicrecords/company-social-profile-finder,publicrecords/govcon-opportunity-feed,publicrecords/grants-gov-scraper,publicrecords/usaspending-awards-scraper,publicrecords/uk-find-a-tender-scraper,publicrecords/eu-ted-notices-scraper,publicrecords/legistar-meetings-scraper,publicrecords/ashby-jobs-scraper,publicrecords/greenhouse-jobs-scraper,publicrecords/lever-jobs-scraper,publicrecords/smartrecruiters-jobs-scraper,publicrecords/etsy-search-scraper,publicrecords/etsy-shop-velocity,publicrecords/google-ads-transparency-scraper,publicrecords/sports-odds-api,publicrecords/spotify-play-count-scraper,publicrecords/calibration-ledger,publicrecords/skool-community-growth-tracker"
+      "url": "https://mcp.apify.com/?tools=publicrecords/company-social-profile-finder,publicrecords/govcon-opportunity-feed,publicrecords/grants-gov-scraper,publicrecords/usaspending-awards-scraper,publicrecords/uk-find-a-tender-scraper,publicrecords/eu-ted-notices-scraper,publicrecords/legistar-meetings-scraper,publicrecords/ashby-jobs-scraper,publicrecords/greenhouse-jobs-scraper,publicrecords/lever-jobs-scraper,publicrecords/smartrecruiters-jobs-scraper,publicrecords/etsy-search-scraper,publicrecords/etsy-shop-velocity,publicrecords/google-ads-transparency-scraper,publicrecords/sports-odds-api,publicrecords/spotify-play-count-scraper,publicrecords/calibration-ledger,publicrecords/skool-community-growth-tracker,publicrecords/pdf-docx-to-markdown,publicrecords/audio-file-transcriber,publicrecords/url-to-markdown,publicrecords/js-page-to-markdown,publicrecords/email-verifier"
     }
   },
   "contextFileName": "GEMINI.md"
