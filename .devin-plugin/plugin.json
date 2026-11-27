@@ -1,8 +1,8 @@
 {
   "name": "publicrecords",
   "displayName": "Public Records Data (Apify)",
-  "description": "Pull public data into your agent: US and EU government contracts and grants, job postings, Skool communities, Etsy sales, competitor ads, sports odds, tennis scores, Spotify plays, PDF and web-page to Markdown, audio transcription, and email domain/MX/disposable checks (not the mailbox)",
-  "shortDescription": "Public-records and market data from 24 Apify Actors",
+  "description": "Pull public data into your agent: US and EU government contracts and grants, job postings, Skool communities, Etsy sales, competitor ads, sports odds, tennis scores, Spotify plays, PDF and web-page to Markdown, audio transcription, and email domain/MX/disposable checks (not the mailbox), website tech-stack detection, phone number validation (not a live carrier lookup), Wikipedia/ECB FX/Treasury lookup, Crossref paper and DOI search, and bulk DNS / SPF / DMARC lookup",
+  "shortDescription": "Public-records and market data from 29 Apify Actors",
   "setup": {
     "notice": "Each tool call runs an Apify Actor on your own Apify account (sign in with Apify OAuth when prompted); Actors bill per result."
   },
@@ -87,6 +87,21 @@
     },
     "email-verifier-mcp": {
       "url": "https://mcp.apify.com?tools=publicrecords/email-verifier"
+    },
+    "tech-stack-detector-mcp": {
+      "url": "https://mcp.apify.com?tools=publicrecords/tech-stack-detector"
+    },
+    "phone-number-validator-mcp": {
+      "url": "https://mcp.apify.com?tools=publicrecords/phone-number-validator"
+    },
+    "wikipedia-search-mcp": {
+      "url": "https://mcp.apify.com?tools=publicrecords/wikipedia-search"
+    },
+    "crossref-papers-doi-lookup-mcp": {
+      "url": "https://mcp.apify.com?tools=publicrecords/crossref-papers-doi-lookup"
+    },
+    "dns-lookup-mcp": {
+      "url": "https://mcp.apify.com?tools=publicrecords/dns-lookup"
     }
   }
 }

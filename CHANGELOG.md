@@ -1,3 +1,7 @@
+## 1.5.0
+
+- Add five skills for the newest public Actors: `website-tech-stack` (`tech-stack-detector`), `phone-number-validator` (`phone-number-validator`), `wikipedia-search` (`wikipedia-search`), `academic-papers-doi` (`crossref-papers-doi-lookup`), and `dns-lookup` (`dns-lookup`).
+
 ## 1.4.0
 
 - Add five skills for the new public Actors: `pdf-to-text` (`pdf-docx-to-markdown`), `audio-to-text` (`audio-file-transcriber`), `web-page-to-markdown` (`url-to-markdown`), `js-page-to-markdown` (`js-page-to-markdown`), and `email-verifier` (`email-verifier`).
